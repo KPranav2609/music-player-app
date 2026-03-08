@@ -10,7 +10,7 @@ import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { closeAuthModal, switchAuthMode } from "../../redux/slices/uiSlice";
 import { CiUser } from "react-icons/ci";
-import "../../css/auth/SignUp.css";
+import "../../css/auth/Signup.css";
 
 const SignUp = () => {
   const dispatch = useDispatch();
