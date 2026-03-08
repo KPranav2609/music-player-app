@@ -1,0 +1,11 @@
+import { signup,login,getme,forgotPassword ,resetPassword,editProfile} from '../controllers/authController.js';
+import express from 'express';
+import { protect } from '../middleware/authMiddleware.js';
+const router = express.Router();
+router.post('/signup',signup);
+router.post('/login',login);
+router.get('/me',protect,getme);
+router.post('/forgotPassword',forgotPassword);
+router.post('/reset-password/:token',resetPassword);
+router.patch('/editProfile',protect,editProfile);
+export default router;
