@@ -4,7 +4,7 @@ import { clearError, logout } from "../../redux/slices/authSlice";
 import { openAuthModal , closeAuthModal} from "../../redux/slices/uiSlice";
 import { useDispatch , useSelector } from "react-redux";
 import SignUp from "./Signup.jsx";
-import Login from "./login.jsx";
+import Login from "./Login.jsx";
 import Modal from "../common/Modal";
 
 const Auth = () => {
