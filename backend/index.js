@@ -13,7 +13,8 @@ app.use(express.json());//middleware to parse JSON request bodies
 connectDB();//calling the function to connect to mongoDb
 
 app.use(cors({
-    origin: 'http://localhost:5173', // Allow requests from this origin
+    origin: ["http://localhost:5173","https://music-player-app-kohl-psi.vercel.app"],
+     // Allow requests from this origin
     credentials: true, // Allow cookies and credentials
 }));
 
